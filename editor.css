@@ -1,0 +1,45 @@
+.code-editor {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b2b2b; /* темный фон */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px; /* соответствие ширине блока текста */
+  margin: auto;
+  box-sizing: border-box;
+  color: #ffffff; /* цвет текста */
+}
+
+#html-input, #css-input, #js-input, #output {
+  width: 100%;
+  min-height: 150px;
+  box-sizing: border-box;
+    resize: both; /* Пользователь может изменять размер элемента как по вертикали, так и по горизонтали. */
+  overflow: auto; /* Поле станет скроллируемым, если контент не умещается внутри него. */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* светлый фон */
+  color: #2b2b2b; /* темный текст */
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #008CBA; /* Синий цвет */
+  border: none;
+  color: white; /* Белый текст */
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 2px 20px 2px; /* одинаковые отступы сверху и снизу */
+  transition-duration: 0.4s; /* Длительность анимации перехода */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white; /* Белый цвет при наведении */
+  color: #008CBA; /* Синий цвет текста при наведении */
+}

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Ocean+Sans');
+
+body {
+  font-family: 'Ocean Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  width: 90%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+.button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+
+  transform: scale(1.33); /* Увеличиваем размер кнопки */
+}
+.card-content h2 {
+  color: white; /* цвет текста */
+  font-size: 2em; /* увеличиваем размер шрифта в два раза */
+}
+
+.card-content p {
+  color: white; /* цвет текста */
+  font-size: 2em; /* увеличиваем размер шрифта в два раза */
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+.html, .css, .javascript {
+  position: relative;
+  color: white;
+  background-size: cover;
+}
+
+
+.html {
+  background-image: url('https://html5hacks.com/wp-content/uploads/2022/08/free-html5-frameworks.png');
+}
+
+.css {
+  background-image: url('https://itproger.com/img/courses/1476977488.jpg');
+}
+
+.javascript {
+  background-image: url('https://itproger.com/img/courses/1476977754.jpg');
+}
+  .card-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center; /* Добавлено */  
+  z-index: 1;
+}
+
+.card h2, .card p, .card a {
+  position: relative;
+  z-index: 2;
+}
+
+.html .card-background {
+  background-image: url('html_image.png');
+}
+
+.css .card-background {
+  background-image: url('css_image.png');
+}
+
+.javascript .card-background {
+  background-image: url('javascript_image.png');
+}
+
+.html::before, .css::before, .javascript::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20%; /* добавлены боковые отступы */
+  text-align: center; /* выравнивание текста по центру */
+}
+.description .card-background {
+  background-image: url('https://cs9.pikabu.ru/post_img/big/2020/03/29/5/158546827218459594.jpg');
+}
+
+.description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2
+}
+.footer {
+  background-color: #2F4F4F; /* цвет фона */
+  color: #fff; /* белый цвет текста */
+  padding: 20px; /* добавляем внутренний отступ для текста */
+  text-align: center; /* выравнивание текста по центру */
+  width: 100%;
+  font-size: 1.33em;
+}
+/* Стили для кнопки открытия меню */
+#menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #555;
+  right: 20%;  /* смещение от правого края страницы */
+    border: none;  /* убираем границу */
+  background: transparent;  /* делаем фон прозрачным */
+     transition: transform 0.3s ease-in-out; /* Добавляем плавный эффект анимации */
+}
+#menu-btn:hover {
+  transform: scale(1.2); /* Увеличиваем размер иконки при наведении */
+}
+/* Стили для бокового меню */
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.side-nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #f2f2f2;
+  display: block;
+  transition: 0.3s;
+  font-size: 30px;  /* увеличиваем размер текста */
+}
+
+/* Стили при наведении на ссылки в меню */
+.side-nav a:hover {
+  color: #f1f1f1;
+  transform: scale(1.1);  /* увеличиваем размер текста при наведении */
+  background-color: #ddd;  /* изменяем цвет фона текста при наведении */
+}
